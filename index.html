@@ -350,7 +350,7 @@ const ICONS = {
   x:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>'
 };
 
-/* المنتجات: أسماء ملفات الصور بجانب index.html في نفس المجلد */
+/* المنتجات: الصور في نفس مجلد index.html، وأسماؤها في المستودع مثل lettuce.jpg.jpeg */
 const FEATURES = ["يصلك طازجاً","خالٍ من المبيدات الحشرية","زراعة مائية محمية","منتج محلي"];
 const ORIGIN = "المملكة العربية السعودية";
 const PRODUCTS = [
@@ -375,7 +375,7 @@ const leafSVG = p => `<svg viewBox="0 0 120 120" aria-hidden="true">
   <path d="M60 60C92 58 106 36 100 14C74 16 58 34 60 60z" fill="${p.c2}"/>
   <path d="M60 86C38 86 26 72 28 54c20 2 32 14 32 32z" fill="${p.c2}"/>
   <path d="M60 86c22 0 34-14 32-32-20 2-32 14-32 32z" fill="${p.c1}"/></svg>`;
-const imgTag = p => `<img src="${p.image}" alt="${p.name} خَضِل" loading="lazy" onerror="this.style.display='none'">`;
+const imgTag = p => `<img src="${p.image}.jpeg" alt="${p.name} خَضِل" loading="lazy" onerror="this.style.display='none'">`;
 
 /* ===== شريط التواصل ===== */
 $("#icons").innerHTML = SOCIAL.map(s =>
